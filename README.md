@@ -1,2 +1,2 @@
 # template1
-View on windows: this is an imitated template only through html and css therefore unresponsive
+NOTE : View on windows: this is an imitated template, build only through html and css therefore non responsive
