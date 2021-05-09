@@ -1,414 +1,136 @@
 <html>
 	<head>
 		<title>template</title>
-		<style>
-			.container {
-				margin-right: 40px;
-				margin-left: 40px;
-				background:white;
-				class="responsive";
-				
-			}
-			.menus {
-				z-index:1;
-				position:fixed;
-				top:0px;
-				width:100%;
-				height:70px;
-				background:white;
-				text-align:right
-				
-			}
-			.endnav {
-				margin-top:20px;
-				color:white;
-				width:100%;
-				height:120px;
-				background:black;
-				text-align:center;
-				
-			}
-			body{
-				margin:0px
-			}
-			
-			.menus ul li a{
-				
-				color:black;
-				text-decoration:none;
-				font-size:19px
-			}
-			.menus ul li{
-				
-				display:inline-block;
-				padding:15px;
-			}
-			.menus ul li:hover{
-				background:lightgrey;
-			}
-			
-			.responsive{
-				width: 100%;
-				height: auto;
-			}
-			
-			.centered {
-				position: absolute;
-				top: 60%;
-				left: 50%;
-				transform: translate(-50%, -50%);
-				color:white;
-				text-decoration:none;
-				font-size:40px;
-				font-family:Calibri;
-
-			}
-			
-			h1{
-				display:inline-block;
-				//display:inline;
-				width:13%
-				
-			}
-			.button {
-				position:relative;
-				top:10px;
-				background-color:lightgrey;
-				border: none;
-				color: black;
-				padding: 10px 22px;
-				text-align: center;
-				text-decoration: none;
-				display: inline-block;
-				font-size: 16px;
-				width:100%;
-			}
-			.button:hover {
-			background-color:grey;
-			}
-			
-			.button2 {
-				position:relative;
-				top:10px;
-				background-color:black;
-				border: none;
-				color: white;
-				padding: 10px 22px;
-				text-align: center;
-				text-decoration: none;
-				display: inline-block;
-				font-size: 16px;
-				width:15%;
-			}
-			.button2:hover {
-				color:black;
-				background-color:lightgrey;
-				
-			}
-			h4{
-				display:inline-block;
-				//display:inline;
-				width:13%
-				
-			}
-			p{
-				font-family:Times New Roman;
-				font-size:130%;
-				
-				margin-top: 1em;
-				margin-bottom: 1em;
-				margin-left: 0;
-				margin-right: 0;
-			}
-			
-			hr{
-				border-color:lightgrey;
-			
-			}
-			
-			input{
-				width:100%;
-				padding: 12px 20px;
-				margin: 8px 0;
-				box-sizing: border-box;
-			}
-			
-			.imgpro{
-				display:inline;
-				width:300px;
-				height:220px;
-				margin-right:13px;
-				margin-bottom:13px;
-			
-			}
-			
-			.house{
-				
-				padding: 10px 10px;
-				text-align: center;
-				text-decoration: none;
-				display: inline-block;
-				font-size: 20px;
-				width:10%;
-				height:25px;
-				color:white;
-				background-color:black;
-				
-			}
-			.t1{
-				
-				position:relative;
-				top:-473px;
-				padding: 9px 9px;
-				text-align: center;
-				text-decoration: none;
-				display: inline-block;
-				font-size: 20px;
-				width:10%;
-				height:23px;
-				color:white;
-				background-color:black;
-			}
-			.t2{
-				
-				position:relative;
-				top:-473px;
-				left:169px;
-				padding: 9px 9px;
-				text-align: center;
-				text-decoration: none;
-				display: inline-block;
-				font-size: 20px;
-				width:10%;
-				height:23px;
-				color:white;
-				background-color:black;
-			}
-			.t3{
-				
-				position:relative;
-				top:-473px;
-				left:336px;
-				padding: 9px 9px;
-				text-align: center;
-				text-decoration: none;
-				display: inline-block;
-				font-size: 20px;
-				width:10%;
-				height:23px;
-				color:white;
-				background-color:black;
-			}
-			.t4{
-				
-				position:relative;
-				top:-473px;
-				left:505px;
-				padding: 9px 9px;
-				text-align: center;
-				text-decoration: none;
-				display: inline-block;
-				font-size: 20px;
-				width:10%;
-				height:23px;
-				color:white;
-				background-color:black;
-			}
-			.t5{
-				
-				position:relative;
-				top:-278px;
-				padding: 9px 9px;
-				text-align: center;
-				text-decoration: none;
-				display: inline-block;
-				font-size: 20px;
-				width:10%;
-				height:23px;
-				color:white;
-				background-color:black;
-			}
-			.t6{
-				
-				position:relative;
-				top:-278px;
-				left:169px;
-				padding: 9px 9px;
-				text-align: center;
-				text-decoration: none;
-				display: inline-block;
-				font-size: 20px;
-				width:10%;
-				height:23px;
-				color:white;
-				background-color:black;
-			}
-			.t7{
-				
-				position:relative;
-				top:-278px;
-				left:336px;
-				padding: 9px 9px;
-				text-align: center;
-				text-decoration: none;
-				display: inline-block;
-				font-size: 20px;
-				width:10%;
-				height:23px;
-				color:white;
-				background-color:black;
-			}
-			.t8{
-				
-				position:relative;
-				top:-278px;
-				left:505px;
-				padding: 9px 9px;
-				text-align: center;
-				text-decoration: none;
-				display: inline-block;
-				font-size: 20px;
-				width:10%;
-				height:23px;
-				color:white;
-				background-color:black;
-			}
-			.imgabt{
-				display:inline-block;
-				width:300px;
-				height:220px;
-				margin-right:13px;
-				margin-bottom:1px;
-			
-			}
-			.p1{
-				font-family:Calibri;
-				position:relative;
-				text-align: left;
-				text-decoration: none;
-				display: inline-block;
-				font-size: 20px;
-				width:290px;
-				height:23px;
-				color:black;
-			}
-			.p2{
-				font-family:Calibri;
-				position:relative;
-				left:18px;
-				padding: 9px 9px;
-				text-align: left;
-				text-decoration: none;
-				display: inline-block;
-				font-size: 20px;
-				width:290px;
-				height:23px;
-				color:black;
-			}
-			.p3{
-				font-family:Calibri;
-				position:relative;
-				left:21px;
-				padding: 9px 9px;
-				text-align: left;
-				text-decoration: none;
-				display: inline-block;
-				font-size: 20px;
-				width:290px;
-				height:23px;
-				color:black;
-			}
-			.p4{
-				font-family:Calibri;
-				position:relative;
-				left:24px;
-				padding: 9px 9px;
-				text-align: left;
-				text-decoration: none;
-				display: inline-block;
-				font-size: 20px;
-				width:290px;
-				height:23px;
-				color:black;
-			}
-			h3{
-				font-size: 18px;
-				color:grey;
-				font-family:Calibri;
-			
-			}
-			
-		</style>
+		<link rel="stylesheet" href="css/styles.css">
 	</head>
 	<body>
 					
 			<div class="menus">
 				<ul>
 					<li style="float:left"><a href="#"><b>BR</b> Architects</a></li>
+					<li><a href="#">Home</a></li>
 					<li><a href="#pro_id">Projects</a></li>
 					<li><a href="#abt_id">About</a></li>
 					<li><a href="#contact_id">Contact</a></li>
 				</ul>
 			</div>
 			<hr>
-				<img src="image/main.jpg"  class="responsive" />
-				<div class="centered"><span style="background-color:black">BR</span> Architects</div>
+
+				<!-- <img src="image/main.jpg"  class="responsive" /> -->
+			<div class="tag-image"><span style="background-color:black">BR</span> Architects</div>
+			<div class="clearfix"></div>
+			<div class="container">
+				<h2 id="pro_id">Projects</h2>
+				<hr/>
+				<div class="house-img">
+					<div class="hi1 float-cont">
+						<img src="image/1.jpg" class="responsive"/>
+						<h3 class="float-text">Summer House</h3>
+					</div>
+					<div class="hi1 float-cont">
+						<img src="image/2.jpg" class="responsive"/>
+						<h3 class="float-text">Brick House</h3>
+					</div>
+					<div class="hi1 float-cont">
+						<img src="image/3.jpg" class="responsive"/>
+						<h3 class="float-text">Storm House</h3>
+					</div>
+					<div class="hi1 float-cont">
+						<img src="image/4.jpg" class="responsive"/>
+						<h3 class="float-text">Barn House</h3>
+					</div>
+				</div>
+				<div class="house-img">
+					<div class="hi1 float-cont">
+						<img src="image/1.jpg" class="responsive"/>
+						<h3 class="float-text">Summer House</h3>
+					</div>
+					<div class="hi1 float-cont">
+						<img src="image/2.jpg" class="responsive"/>
+						<h3 class="float-text">Brick House</h3>
+					</div>
+					<div class="hi1 float-cont">
+						<img src="image/3.jpg" class="responsive"/>
+						<h3 class="float-text">Storm House</h3>
+					</div>
+					<div class="hi1 float-cont">
+						<img src="image/4.jpg" class="responsive"/>
+						<h3 class="float-text">Barn House</h3>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+				<div class="about-section" id="abt_id">
+					<h2 >About</h2>
+					<hr/>
+					<p class="responsive">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+						sed eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+						nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat
+						cupidatat non proident, sunt in culpa qui officia deserunt mollit
+						anim laborum consectetur adipiscing elit, sed do eiusmod 
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad 
+						minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+						aliquip ex ea commodo consequat.</p>
+					<br>
+					<div class="hi1">
+						<img src="image/5.jpg"  class="responsive" />
+						<h2>John Doe</h2>
+						<p class="abt-desc">CEO & Founder</p>
+						Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+						<button class="button" type="submit" width="100%" >Contact</button>
+					</div>
+					<div class="hi1">
+						<img src="image/6.jpg"  class="responsive" />
+						<h2>Jane Doe</h2>
+						<p class="abt-desc">Architect</p>
+						Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+						<button class="button" type="submit" width="100%" >Contact</button>
+					</div>
+					<div class="hi1">
+						<img src="image/7.jpg"  class="responsive" />
+						<h2>Mike Ross</h2>
+						<p class="abt-desc">Architect</p>
+						Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+						<button class="button" type="submit" width="100%" >Contact</button>
+					</div>
+					<div class="hi1">
+						<img src="image/8.jpg"  class="responsive" />
+						<h2>Dan Star</h2>
+						<p class="abt-desc">Architect</p>
+						Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+						<button class="button" type="submit" width="100%" >Contact</button>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+				<br>
+				<h2 id="contact_id">Contact</h2>
+				<hr>
+				<p>	Lets get in touch and talk about your next project.</p>
 			
-			<div class="container">	
-			<div id="pro_id">
-			<br>
-			<br>
-			<br>
-			<h2 >Projects</h2>
+				<form method=""  autocomplete="off" class="main">
+					<input type="text" placeholder="Name" name="uname" required/>
+					<input type="email" placeholder="Email" name="email" required/>
+					<input type="text" placeholder="Subject" name="sub" required/>						
+					<input type="text" placeholder="Comment" name="cmnt" required/>
+				</form>
+			
+				<button class="button2" type="submit" >SEND MESSAGE</button>
+
+				<img src="image/last.jpg" class="responsive" />				
+				
 			</div>
-			<hr/>
-			<br>
+			<div class="endnav">
+				<br>
+				<br>
+				Template by <a href="https://www.w3schools.com/w3css/tryw3css_templates_architect.htm">w3css</a>
+				<br>
+				<b>Made by Shreya</b>
+			</div>
+			<!-- 			
+			
 			<br>
 			
 			
-				<img src="image/1.jpg" class="imgpro"/>
-				
-				<img src="image/2.jpg" class="imgpro"/>
-				
-				<img src="image/3.jpg" class="imgpro"/>
-				
-				<img src="image/4.jpg" class="imgpro"/>
-				
-				<img src="image/2.jpg" class="imgpro"/>
-
-				<img src="image/1.jpg" class="imgpro"/>
-				
-				<img src="image/4.jpg" class="imgpro"/>
-
-				<img src="image/3.jpg" class="imgpro"/>
-			
-				
-					
-						<div class="t1">Summer House</div>
-						<div class="t2">Brick House</div>
-						<div class="t3">Renovated</div>
-						<div class="t4">Barn House</div>
-						<br>
-						<div class="t5">Summer House</div>
-						<div class="t6">Brick House</div>
-						<div class="t7">Renovated</div>
-						<div class="t8">Barn House</div>
-				
-			<br>
-			<h2 id="abt_id">About</h2>
-			<hr/>
-			<br>
-			
-			<p class="responsive">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-			sed eiusmod tempor incididunt ut labore et dolore magna aliqua.
-			Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-			nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat
-			cupidatat non proident, sunt in culpa qui officia deserunt mollit
-			anim laborum consectetur adipiscing elit, sed do eiusmod 
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad 
-			minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-			aliquip ex ea commodo consequat.</p>
-			<br>
 			<div>
 			</div>
 			
@@ -473,13 +195,9 @@
 		<img src="image/last.jpg" class="responsive" />	
 	</div>
 	
-	<div class="endnav">
-	<br>
-	<br>
-		Powered by <u>w3.css</u>
-	</div>
+	
 			
 								
-			
+			 -->
 	</body>
 </html>
